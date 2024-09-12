@@ -1,0 +1,23 @@
+import math
+import statistics
+
+totalheights = 0
+Heights = 0
+heights = [62.5, 68, 70, 71, 71, 72, 73, 73, 74]
+heightmean = []
+
+mean = statistics.mean(heights)
+print(mean)
+for s in range(len(heights)):
+    signum = 0
+    signum = heights[s] - mean
+    signum = signum * signum
+    heightmean.insert(-1, signum)
+
+for r in range(len(heights)):
+    Heights = Heights + heightmean[r]
+mew = Heights/len(heightmean)
+
+stdev = math.sqrt(mew)
+
+print(f"The standard deviation is: {stdev}")
