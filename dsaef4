@@ -1,0 +1,25 @@
+import statistics
+import math
+import numpy
+
+height = [62.5, 68, 70, 71, 71, 72, 73, 73, 74]
+Q1 = statistics.median(height[0:4])
+Q2 = statistics.median(height[4:])
+Q3 = statistics.median(height[5:])
+IQR = Q3 - Q1
+
+print(f"First Quartile (Q1): {Q1}")
+print(f"Second Quartile (Q2, Median): {Q2}")
+print(f"Third Quartile (Q3): {Q3}")
+print(f"Interquartile Range (IQR): {IQR}")
+user_height = height.index(input("hghghghghghgb"))
+
+  print(user_height)
+
+
+
+mathbs = user_height/9
+
+print(f"{mathbs}")
+
+print(f"Your height is in the th percentile of the dataset.")
